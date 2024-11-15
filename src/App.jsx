@@ -1,12 +1,14 @@
 import React from 'react';
-import Profile from './components/Profile/Profile';
-import FriendList from './components/FriendList/FriendList';
+import Profile from './components/Profile/Profile.jsx';
+import FriendList from './components/FriendList/FriendList.jsx';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory.jsx';
 import userData from './userData.json';
 import friends from './friends.json';
+import transactions from './transactions.json';
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -14,8 +16,9 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList friends={friends} /> {}
-    </div>
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
+    </>
   );
 };
 
