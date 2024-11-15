@@ -1,0 +1,26 @@
+.friendItem {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.avatar {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
